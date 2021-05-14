@@ -1,14 +1,12 @@
 fun calculaBonus(cargo: String, salario: Float) : Float{
     //Gerente Junior, Gerente Sênior, Coordenador
-    val bonus: Float
-    if (cargo == "Coordenador"){
-        bonus = salario * 1.2f
+    return if (cargo == "Coordenador"){
+        salario * 1.2f
     }else if (cargo == "Gerente Junior"){
-        bonus = salario * 1.5f
+        salario * 1.5f
     } else{
-        bonus = salario * 2
+        salario * 2
     }
-    return  bonus
 }
 
 
